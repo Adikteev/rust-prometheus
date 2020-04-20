@@ -29,7 +29,7 @@ cfg-if = "0.1"
 fnv = "1.0"
 lazy_static = "1.4"
 libc = { version = "0.2", optional = true }
-protobuf = { git = "https://github.com/stepancheg/rust-protobuf.git", optional = true, ref = "c30783ecb9a79d8dc039767b8752038ddebee941" }
+protobuf = { git = "https://github.com/stepancheg/rust-protobuf.git", optional = true, ref = "c30783ecb9a79d8dc039767b8752038ddebee941", features = ["with-serde"] }
 reqwest = { version = "0.10", features = ["blocking"], optional = true }
 spin = "0.5.2"
 thiserror = "1.0"
@@ -43,7 +43,7 @@ hyper = "0.13"
 tokio = { version = "0.2", features = ["macros"] }
 
 [build-dependencies]
-protobuf-codegen-pure = { git = "https://github.com/stepancheg/rust-protobuf.git", optional = true, ref = "c30783ecb9a79d8dc039767b8752038ddebee941" }
+protobuf-codegen-pure = { git = "https://github.com/stepancheg/rust-protobuf.git", optional = true, ref = "0a18003e527543daff63697a0f45b813c50d04d1" }
 
 [workspace]
 members = ["static-metric"]
